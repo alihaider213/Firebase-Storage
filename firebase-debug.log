@@ -1,0 +1,136 @@
+[debug] [2022-09-14T11:10:43.306Z] ----------------------------------------------------------------------
+[debug] [2022-09-14T11:10:43.315Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ali haider\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-09-14T11:10:43.318Z] CLI Version:   11.8.1
+[debug] [2022-09-14T11:10:43.318Z] Platform:      win32
+[debug] [2022-09-14T11:10:43.319Z] Node Version:  v16.17.0
+[debug] [2022-09-14T11:10:43.329Z] Time:          Wed Sep 14 2022 04:10:43 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-09-14T11:10:43.331Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-14T11:10:43.476Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-14T11:10:43.477Z] > authorizing via signed-in user (alihaider213@gmail.com)
+[debug] [2022-09-14T11:10:43.477Z] [iam] checking project ecommerce-app-321 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-14T11:10:43.480Z] > refreshing access token with scopes: []
+[debug] [2022-09-14T11:10:43.482Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-14T11:10:43.482Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-14T11:10:57.674Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-09-14T11:10:57.675Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-14T11:10:57.866Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-app-321:testIamPermissions [none]
+[debug] [2022-09-14T11:10:57.866Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-app-321:testIamPermissions x-goog-quota-user=projects/ecommerce-app-321
+[debug] [2022-09-14T11:10:57.867Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-app-321:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-14T11:11:08.149Z] ----------------------------------------------------------------------
+[debug] [2022-09-14T11:11:08.152Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ali haider\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-09-14T11:11:08.152Z] CLI Version:   11.8.1
+[debug] [2022-09-14T11:11:08.152Z] Platform:      win32
+[debug] [2022-09-14T11:11:08.153Z] Node Version:  v16.17.0
+[debug] [2022-09-14T11:11:08.155Z] Time:          Wed Sep 14 2022 04:11:08 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-09-14T11:11:08.156Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-14T11:11:08.235Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-14T11:11:08.236Z] > authorizing via signed-in user (alihaider213@gmail.com)
+[debug] [2022-09-14T11:11:08.236Z] [iam] checking project ecommerce-app-321 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-14T11:11:08.239Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-app-321:testIamPermissions [none]
+[debug] [2022-09-14T11:11:08.239Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-app-321:testIamPermissions x-goog-quota-user=projects/ecommerce-app-321
+[debug] [2022-09-14T11:11:08.239Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-app-321:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-14T11:11:09.765Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-app-321:testIamPermissions 200
+[debug] [2022-09-14T11:11:09.766Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-app-321:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-14T11:11:09.767Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-app-321 [none]
+[debug] [2022-09-14T11:11:14.966Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-app-321 200
+[debug] [2022-09-14T11:11:14.966Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-app-321 {"projectId":"ecommerce-app-321","projectNumber":"872336912081","displayName":"Ecommerce App","name":"projects/ecommerce-app-321","resources":{"hostingSite":"ecommerce-app-321","storageBucket":"ecommerce-app-321.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_314424cd-7a3b-4a5a-bb6b-e695e27bcbc3"}
+[info] 
+[info] === Deploying to 'ecommerce-app-321'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-09-14T11:11:14.970Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-app-321 [none]
+[debug] [2022-09-14T11:11:15.617Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-app-321 200
+[debug] [2022-09-14T11:11:15.618Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-app-321 {"projectId":"ecommerce-app-321","projectNumber":"872336912081","displayName":"Ecommerce App","name":"projects/ecommerce-app-321","resources":{"hostingSite":"ecommerce-app-321","storageBucket":"ecommerce-app-321.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_314424cd-7a3b-4a5a-bb6b-e695e27bcbc3"}
+[debug] [2022-09-14T11:11:15.628Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/versions [none]
+[debug] [2022-09-14T11:11:15.629Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-09-14T11:11:23.337Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/versions 200
+[debug] [2022-09-14T11:11:23.337Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/versions {"name":"projects/872336912081/sites/ecommerce-app-321/versions/499bd5108befb4ff","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[ecommerce-app-321]: beginning deploy... 
+[info] i  hosting[ecommerce-app-321]: found 14 files in build 
+[debug] [2022-09-14T11:11:23.352Z] [hosting] uploading with 200 concurrency
+[debug] [2022-09-14T11:11:23.697Z] [hosting] hash cache [YnVpbGQ] stored for 14 files
+[debug] [2022-09-14T11:11:23.698Z] [hosting][hash queue][FINAL] {"max":322,"min":3,"avg":34.214285714285715,"active":0,"complete":14,"success":14,"errored":0,"retried":0,"total":14,"elapsed":329}
+[debug] [2022-09-14T11:11:23.698Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/versions/499bd5108befb4ff:populateFiles [none]
+[debug] [2022-09-14T11:11:23.698Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/versions/499bd5108befb4ff:populateFiles {"files":{"/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/index.html":"1db39e52c1290a0020d6253b72ebb361f7d2c96d70eb571db7c754659557ddb5","/asset-manifest.json":"5faa857304e91404a20f2d09aa1ba885675197ec933ccb73192fe9d9f981e231","/static/js/787.a2b3914c.chunk.js":"9937fd81d60c9e130cb1d6bdaad4195d164a8ad490ec8ec9a0b6a7bfcd704422","/static/js/main.7a27f16a.js.LICENSE.txt":"414ff87a9fd70879eb2732911708ed5a511b77afded79cf227f4fecb19bf6882","/static/js/787.a2b3914c.chunk.js.map":"78ae2299a4bbb4bad4c9219bc6cc6439d7569df4937753c0545cb1cc89250270","/static/css/main.bcfd83ce.css":"aa10c2c6f4e9b430cd94c4a9c5a677bb56f08c7afad44c1c3179f71a257fd782","/static/js/main.7a27f16a.js":"aea2d3a70dd999566249613f0133b25ce12a30cdc44059a9372ed35defeb607f","/static/css/main.bcfd83ce.css.map":"9961a3e12a77a5f8a99984d86306c2a23c9e2c585bc07ba4c36309a3e76d2b91","/static/js/main.7a27f16a.js.map":"bf2edff031f8ab9fbc29662d15129fde3baf7291dc1413de1b5bb8630de2e61e"}}
+[debug] [2022-09-14T11:11:29.231Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/versions/499bd5108befb4ff:populateFiles 200
+[debug] [2022-09-14T11:11:29.231Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/versions/499bd5108befb4ff:populateFiles {"uploadRequiredHashes":["aa10c2c6f4e9b430cd94c4a9c5a677bb56f08c7afad44c1c3179f71a257fd782","9961a3e12a77a5f8a99984d86306c2a23c9e2c585bc07ba4c36309a3e76d2b91","1db39e52c1290a0020d6253b72ebb361f7d2c96d70eb571db7c754659557ddb5","5faa857304e91404a20f2d09aa1ba885675197ec933ccb73192fe9d9f981e231","aea2d3a70dd999566249613f0133b25ce12a30cdc44059a9372ed35defeb607f","bf2edff031f8ab9fbc29662d15129fde3baf7291dc1413de1b5bb8630de2e61e"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files"}
+[debug] [2022-09-14T11:11:29.234Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/aa10c2c6f4e9b430cd94c4a9c5a677bb56f08c7afad44c1c3179f71a257fd782 [none]
+[debug] [2022-09-14T11:11:29.234Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/aa10c2c6f4e9b430cd94c4a9c5a677bb56f08c7afad44c1c3179f71a257fd782 [stream]
+[debug] [2022-09-14T11:11:29.236Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/9961a3e12a77a5f8a99984d86306c2a23c9e2c585bc07ba4c36309a3e76d2b91 [none]
+[debug] [2022-09-14T11:11:29.237Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/9961a3e12a77a5f8a99984d86306c2a23c9e2c585bc07ba4c36309a3e76d2b91 [stream]
+[debug] [2022-09-14T11:11:29.238Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/1db39e52c1290a0020d6253b72ebb361f7d2c96d70eb571db7c754659557ddb5 [none]
+[debug] [2022-09-14T11:11:29.238Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/1db39e52c1290a0020d6253b72ebb361f7d2c96d70eb571db7c754659557ddb5 [stream]
+[debug] [2022-09-14T11:11:29.239Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/5faa857304e91404a20f2d09aa1ba885675197ec933ccb73192fe9d9f981e231 [none]
+[debug] [2022-09-14T11:11:29.239Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/5faa857304e91404a20f2d09aa1ba885675197ec933ccb73192fe9d9f981e231 [stream]
+[debug] [2022-09-14T11:11:29.241Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/aea2d3a70dd999566249613f0133b25ce12a30cdc44059a9372ed35defeb607f [none]
+[debug] [2022-09-14T11:11:29.241Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/aea2d3a70dd999566249613f0133b25ce12a30cdc44059a9372ed35defeb607f [stream]
+[debug] [2022-09-14T11:11:29.243Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/bf2edff031f8ab9fbc29662d15129fde3baf7291dc1413de1b5bb8630de2e61e [none]
+[debug] [2022-09-14T11:11:29.243Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/bf2edff031f8ab9fbc29662d15129fde3baf7291dc1413de1b5bb8630de2e61e [stream]
+[debug] [2022-09-14T11:11:29.245Z] [hosting][populate queue][FINAL] {"max":5539,"min":5539,"avg":5539,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":5550}
+[debug] [2022-09-14T11:11:29.245Z] [hosting] uploads queued: 6
+[debug] [2022-09-14T11:11:36.676Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/aa10c2c6f4e9b430cd94c4a9c5a677bb56f08c7afad44c1c3179f71a257fd782 200
+[debug] [2022-09-14T11:11:36.676Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/aa10c2c6f4e9b430cd94c4a9c5a677bb56f08c7afad44c1c3179f71a257fd782 [stream]
+[debug] [2022-09-14T11:11:42.487Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/bf2edff031f8ab9fbc29662d15129fde3baf7291dc1413de1b5bb8630de2e61e 200
+[debug] [2022-09-14T11:11:42.488Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/bf2edff031f8ab9fbc29662d15129fde3baf7291dc1413de1b5bb8630de2e61e [stream]
+[debug] [2022-09-14T11:11:42.489Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/5faa857304e91404a20f2d09aa1ba885675197ec933ccb73192fe9d9f981e231 200
+[debug] [2022-09-14T11:11:42.489Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/5faa857304e91404a20f2d09aa1ba885675197ec933ccb73192fe9d9f981e231 [stream]
+[debug] [2022-09-14T11:11:44.419Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/1db39e52c1290a0020d6253b72ebb361f7d2c96d70eb571db7c754659557ddb5 200
+[debug] [2022-09-14T11:11:44.419Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/1db39e52c1290a0020d6253b72ebb361f7d2c96d70eb571db7c754659557ddb5 [stream]
+[debug] [2022-09-14T11:11:54.105Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/9961a3e12a77a5f8a99984d86306c2a23c9e2c585bc07ba4c36309a3e76d2b91 200
+[debug] [2022-09-14T11:11:54.105Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/9961a3e12a77a5f8a99984d86306c2a23c9e2c585bc07ba4c36309a3e76d2b91 [stream]
+[debug] [2022-09-14T11:11:56.356Z] [uploadQueue] Retrying task aea2d3a70dd999566249613f0133b25ce12a30cdc44059a9372ed35defeb607f
+[debug] [2022-09-14T11:11:56.357Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/aea2d3a70dd999566249613f0133b25ce12a30cdc44059a9372ed35defeb607f [none]
+[debug] [2022-09-14T11:11:56.357Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/aea2d3a70dd999566249613f0133b25ce12a30cdc44059a9372ed35defeb607f [stream]
+[debug] [2022-09-14T11:11:58.869Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/aea2d3a70dd999566249613f0133b25ce12a30cdc44059a9372ed35defeb607f 200
+[debug] [2022-09-14T11:11:58.869Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-app-321/versions/499bd5108befb4ff/files/aea2d3a70dd999566249613f0133b25ce12a30cdc44059a9372ed35defeb607f [stream]
+[debug] [2022-09-14T11:11:58.869Z] [hosting][upload queue][FINAL] {"max":24872,"min":2513,"avg":12754.166666666666,"active":0,"complete":6,"success":6,"errored":0,"retried":1,"total":6,"elapsed":29637}
+[info] +  hosting[ecommerce-app-321]: file upload complete 
+[debug] [2022-09-14T11:11:58.871Z] [hosting] deploy completed after 35531ms
+[debug] [2022-09-14T11:11:58.875Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "ecommerce-app-321"
+    },
+    "site": "ecommerce-app-321",
+    "version": "projects/872336912081/sites/ecommerce-app-321/versions/499bd5108befb4ff"
+  }
+]
+[info] i  hosting[ecommerce-app-321]: finalizing version... 
+[debug] [2022-09-14T11:11:58.878Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/versions/499bd5108befb4ff updateMask=status%2Cconfig
+[debug] [2022-09-14T11:11:58.879Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/versions/499bd5108befb4ff {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2022-09-14T11:12:00.987Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/versions/499bd5108befb4ff 200
+[debug] [2022-09-14T11:12:00.988Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/versions/499bd5108befb4ff {"name":"projects/872336912081/sites/ecommerce-app-321/versions/499bd5108befb4ff","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-09-14T11:11:23.134601Z","createUser":{"email":"AliHaider213@gmail.com"},"finalizeTime":"2022-09-14T11:12:01.146210Z","finalizeUser":{"email":"AliHaider213@gmail.com"}}
+[debug] [2022-09-14T11:12:00.988Z] [hosting] finalized version for ecommerce-app-321:[object Object]
+[info] +  hosting[ecommerce-app-321]: version finalized 
+[info] i  hosting[ecommerce-app-321]: releasing new version... 
+[debug] [2022-09-14T11:12:00.998Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/releases versionName=projects%2F872336912081%2Fsites%2Fecommerce-app-321%2Fversions%2F499bd5108befb4ff
+[debug] [2022-09-14T11:12:00.998Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/releases {"message":null}
+[debug] [2022-09-14T11:12:12.995Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/releases 200
+[debug] [2022-09-14T11:12:12.995Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/872336912081/sites/ecommerce-app-321/releases {"name":"projects/872336912081/sites/ecommerce-app-321/releases/1663153932534956","version":{"name":"projects/872336912081/sites/ecommerce-app-321/versions/499bd5108befb4ff","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-09-14T11:11:23.134601Z","createUser":{"email":"AliHaider213@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmlLNtUnuGJXzCv8GfTEAaYy5LZ4fXgloHk3Fn1v"},"finalizeTime":"2022-09-14T11:12:01.146210Z","finalizeUser":{"email":"AliHaider213@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmlLNtUnuGJXzCv8GfTEAaYy5LZ4fXgloHk3Fn1v"}},"type":"DEPLOY","releaseTime":"2022-09-14T11:12:12.534956293Z","releaseUser":{"email":"AliHaider213@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmlLNtUnuGJXzCv8GfTEAaYy5LZ4fXgloHk3Fn1v"}}
+[debug] [2022-09-14T11:12:12.995Z] [hosting] release: {"name":"projects/872336912081/sites/ecommerce-app-321/releases/1663153932534956","version":{"name":"projects/872336912081/sites/ecommerce-app-321/versions/499bd5108befb4ff","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-09-14T11:11:23.134601Z","createUser":{"email":"AliHaider213@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmlLNtUnuGJXzCv8GfTEAaYy5LZ4fXgloHk3Fn1v"},"finalizeTime":"2022-09-14T11:12:01.146210Z","finalizeUser":{"email":"AliHaider213@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmlLNtUnuGJXzCv8GfTEAaYy5LZ4fXgloHk3Fn1v"}},"type":"DEPLOY","releaseTime":"2022-09-14T11:12:12.534956293Z","releaseUser":{"email":"AliHaider213@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmlLNtUnuGJXzCv8GfTEAaYy5LZ4fXgloHk3Fn1v"}}
+[info] +  hosting[ecommerce-app-321]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/ecommerce-app-321/overview
+[info] Hosting URL: https://ecommerce-app-321.web.app
+[debug] [2022-09-14T11:12:51.677Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\ali haider\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
